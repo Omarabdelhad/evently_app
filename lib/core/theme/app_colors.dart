@@ -1,79 +1,15 @@
-import 'package:flutter/material.dart';
+import 'dart:ui';
 
-abstract class AppColors {
-  const AppColors();
-
-  Brightness get brightness;
-  Color get disableColor;
-  Color get primaryColor;
-  Color get secondaryTexColor;
-  Color get backgroundColor;
-  Color get inputsColor;
-  Color get strockColor;
-  Color get errorColor;
-  Color get mainTextColor;
-}
-
-class LightAppColors extends AppColors {
-  const LightAppColors();
-
-  @override
-  Color get primaryColor => const Color(0xFF0E3A99);
-
-  @override
-  Color get disableColor => const Color(0xFFB9B9B9);
-
-  @override
-  Color get mainTextColor => primaryColor;
-
-  @override
-  Color get secondaryTexColor => const Color(0xFF686868);
-
-  @override
-  Color get backgroundColor => const Color(0xFFF4F7FF);
-
-  @override
-  Color get inputsColor => const Color(0xFFFFFFFF);
-
-  @override
-  Color get strockColor => const Color(0xFF1C1C1C);
-
-  @override
-  Color get errorColor => const Color(0xFFFF3232);
-
-  @override
-  // TODO: implement brightness
-  Brightness get brightness => Brightness.light;
-}
-
-class DarkAppColors extends AppColors {
-  const DarkAppColors();
-
-  @override
-  Color get primaryColor => const Color(0xFF457AED);
-
-  @override
-  Color get disableColor => const Color(0xFFB9B9B9);
-
-  @override
-  Color get mainTextColor => const Color(0xFFFFFFFF);
-
-  @override
-  Color get secondaryTexColor => const Color(0xFFD6D6D6);
-
-  @override
-  Color get backgroundColor => const Color(0xFF000F30);
-
-  @override
-  Color get inputsColor => const Color(0xFF001440);
-
-  @override
-  Color get strockColor => const Color(0xFFFFFFFF);
-
-  @override
-  Color get errorColor => const Color(0xFFFF3232);
-
-  @override
-  // TODO: implement brightness
-  Brightness get brightness => Brightness.dark;
+abstract final class AppColors {
+  static const Color lightBackground = Color(0xffF4F7FF);
+  static const Color darkBackground = Color(0xff000F30);
+  static const Color lightPrimary = Color(0xff0E3A99);
+  static const Color darkPrimary = Color(0xff457AED);
+  static const Color whiteColor = Color(0xffFFFFFF);
+  static const Color blackColor = Color(0xff1C1C1C);
+  static const Color lightSecondaryColor = Color(0xff686868);
+  static const Color darkSecondaryColor = Color(0xffD6D6D6);
+  static const Color darkUnselectedSettings = Color(0xff001440);
+  static const Color lightFieldBorderColor = Color(0xffF0F0F0);
+  static const Color darkFieldBorderColor = Color(0xff002D8F);
 }

@@ -18,14 +18,14 @@ class LanguageSwitch extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         backgroundColor: languageCode == selectedLanguage
             ? Theme.of(context).colorScheme.primary
-            : Theme.of(context).colorScheme.surface,
+            : Theme.of(context).colorScheme.onPrimaryContainer,
       ),
       onPressed: () {},
       child: Text(
         title,
         style: languageCode == selectedLanguage
-            ? Theme.of(context).textTheme.labelSmall
-            : Theme.of(context).textTheme.labelMedium,
+            ? Theme.of(context).textTheme.labelMedium
+            : Theme.of(context).textTheme.labelSmall,
       ),
     );
   }
