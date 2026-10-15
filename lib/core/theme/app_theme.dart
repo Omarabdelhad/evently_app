@@ -9,6 +9,7 @@ class AppTheme {
       onPrimary: AppColors.lightPrimary,
       onPrimaryContainer: AppColors.whiteColor,
       secondary: AppColors.lightFieldBorderColor,
+      surface: AppColors.lightDeactiveDots,
     ),
     scaffoldBackgroundColor: AppColors.lightBackground,
     appBarTheme: AppBarTheme(
@@ -25,6 +26,7 @@ class AppTheme {
         fontSize: 16,
         fontWeight: FontWeight.w400,
         color: AppColors.lightSecondaryColor,
+        height: 1.7,
       ),
       labelMedium: TextStyle(
         fontSize: 14,
@@ -51,6 +53,7 @@ class AppTheme {
       onPrimary: AppColors.whiteColor,
       onPrimaryContainer: AppColors.darkUnselectedSettings,
       secondary: AppColors.darkFieldBorderColor,
+      surface: AppColors.lightBackground,
     ),
     scaffoldBackgroundColor: AppColors.darkBackground,
     appBarTheme: AppBarTheme(
@@ -67,6 +70,7 @@ class AppTheme {
         fontSize: 16,
         fontWeight: FontWeight.w400,
         color: AppColors.darkSecondaryColor,
+        height: 1.7,
       ),
       labelMedium: TextStyle(
         fontSize: 14,
